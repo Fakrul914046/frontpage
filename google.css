@@ -1,0 +1,250 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: century;
+}
+header{
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url(aa.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+ul li{
+    display: inline-block;    
+}
+#check:checked~ul{
+    left: 0;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px  20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+ul li a:hover{
+    background-color:#fff;
+    color: black;
+}
+ul li.active a{
+    background-color:#fff;
+        color: #000;
+}    
+.checkbtn {
+  color: wheat;
+}
+#check{
+    display: none;
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top:47%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+.button{
+    position:absolute;
+    top:60%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid #fff;
+	padding: 5px 20px;
+	color: #fff;
+	transition: 0.6s ease;
+	font-size: 18px;
+	text-decoration: none;
+}
+.btn:hover{
+    background-color:#fff;
+    color: black;
+}
+.sub_menu{
+    display: none;
+    top: 6%;
+    position: relative;
+}
+.sub_menu ul{
+    position: absolute;
+}
+.main ul li:hover .sub_menu{
+    display: block;
+    position: absolute;
+    background-color: rgb(0,45,117);
+    margin-top: 12px;
+    margin-left: -8px;
+}
+.main ul li:hover .sub_menu ul{
+    display: black;
+    margin: 7px;
+}
+.main ul li:hover .sub_menu ul li{
+    width: 75px;
+	padding: 5px;
+	border-bottom: 1px#fff;
+	background: transparent;
+	transition: 0.4s ease;
+	text-align: left;
+	border-radius: 0;
+}
+
+.main ul li:hover .sub-menu ul li:last-child 
+{
+	border-bottom: none;
+}
+@media (max-width:760px){
+    header{
+        width: 100%;
+        height: auto;
+    }
+    header.logo{
+        margin-left: 30px;
+        padding: 20px;
+    }
+    .checkbtn{
+        display: block;
+    }
+}
+
+/*
+body{
+    margin: 0;
+    padding: 0;
+}
+section{
+   position: relative;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;   
+}
+section header{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+section header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+section header ul li a{
+    text-decoration: none;
+    font-size: 14px;
+}
+section header ul li button{
+    background-color: rgb(50, 55, 111);
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+section .main{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .main .searchbox{
+    position:relative;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+}
+section .main .searchbox .search{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 60px;
+    border-radius: 30px;
+    border:1px solid;
+    outline: none;
+    font-size: 16px;
+}
+section .main .searchbox .icons{
+    position: absolute;
+    top:0;
+    width: 100%;
+    display: flex;
+    padding: 12px 20px;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+section .main .buttons{
+    margin-top: 20px;
+}
+section .main .buttons button{
+    margin: 0px 20px;
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #555;
+    outline: none;
+    cursor: pointer;
+    border-radius: 1px solid transparent;
+}
+section .main .buttons button:hover{
+    border-radius: 1px solid #ccc;
+}
+section .main .lang{
+    margin-top: 10px;
+}
+section .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f2f2f2;
+}
+section .footer .row{
+    display: flex;
+    justify-content: space-between;
+    border-top:1px solid black;
+}
+section .footer .row ul{
+    display: flex;
+}
+section .footer .row ul li{
+    list-style: none;
+}
+section .footer .row ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #555;
+    margin-right: 15px;
+}*/
